@@ -8,7 +8,7 @@ To use this system, follow these steps:
 
 1)Set up an AWS account if you don't have one already.
 
-2)Create an Amazon RDS instance with a MySQL database. Make note of the endpoint, database name, username, and password.
+2)Login to the aws management console ,Create an Amazon RDS instance with a MySQL database. Make note of the endpoint, database name, username, and password.
 
 3)Create an AWS Lambda function**(data-collector-lambda.py)** and configure it to fetch data from the API at specified intervals (eg: 1 minute) using AWS EventBridge add the Layer file attached above to the lambda .Write the Lambda function code **(data-collector-lambda)** to  fetch data and store it in the Amazon RDS database.
 
